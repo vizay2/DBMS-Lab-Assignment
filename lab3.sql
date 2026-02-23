@@ -1,4 +1,4 @@
-/*
+
 CREATE TABLE Department (
     dept_id VARCHAR2(10) PRIMARY KEY,
     dept_name VARCHAR2(100) NOT NULL,
@@ -108,8 +108,6 @@ SELECT * FROM Course;
 SELECT * FROM Student;
 SELECT * FROM Enrollment;
 
-*/
-
 INSERT INTO Student VALUES ('S26','Akash Dubey', TO_DATE('2003-01-12','YYYY-MM-DD'),'M','9000000026','D01');
 INSERT INTO Student VALUES ('S27','Riya Arora', TO_DATE('2004-02-18','YYYY-MM-DD'),'F','9000000027','D02');
 INSERT INTO Student VALUES ('S28','Manish Pandey', TO_DATE('2003-03-22','YYYY-MM-DD'),'M','9000000028','D03');
@@ -165,5 +163,9 @@ INSERT INTO Student VALUES ('S73','Kiran Pillai', TO_DATE('2004-12-27','YYYY-MM-
 INSERT INTO Student VALUES ('S74','Ankit Bhardwaj', TO_DATE('2003-01-31','YYYY-MM-DD'),'M','9000000074','D01');
 INSERT INTO Student VALUES ('S75','Ritu Malhotra', TO_DATE('2004-02-09','YYYY-MM-DD'),'F','9000000075','D02');
 
-
+SELECT * FROM Department;
+SELECT * FROM Faculty;
+SELECT * FROM Course;
+SELECT * FROM Student;
+SELECT * FROM Enrollment;
 
