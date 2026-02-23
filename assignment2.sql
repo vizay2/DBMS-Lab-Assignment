@@ -40,8 +40,6 @@ CREATE TABLE Enrollment (
     FOREIGN KEY (course_id) REFERENCES Course(course_id)
 );
 
-*/
-
 DESC Department;
 DESC Faculty;
 DESC Course;
