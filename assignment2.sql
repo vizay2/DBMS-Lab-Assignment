@@ -1,16 +1,9 @@
-/*
--- =====================
--- Department Table
--- =====================
+
 CREATE TABLE Department (
     dept_id VARCHAR(10) PRIMARY KEY,
     dept_name VARCHAR(100) NOT NULL,
     office_location VARCHAR(50)
 );
-
--- =====================
--- Faculty Table
--- =====================
 CREATE TABLE Faculty (
     faculty_id VARCHAR(10) PRIMARY KEY,
     faculty_name VARCHAR(100) NOT NULL,
@@ -19,10 +12,6 @@ CREATE TABLE Faculty (
     dept_id VARCHAR(10),
     FOREIGN KEY (dept_id) REFERENCES Department(dept_id)
 );
-
--- =====================
--- Course Table
--- =====================
 CREATE TABLE Course (
     course_id VARCHAR(10) PRIMARY KEY,
     course_name VARCHAR(100) NOT NULL,
@@ -32,10 +21,6 @@ CREATE TABLE Course (
     FOREIGN KEY (dept_id) REFERENCES Department(dept_id),
     FOREIGN KEY (faculty_id) REFERENCES Faculty(faculty_id)
 );
-
--- =====================
--- Student Table
--- =====================
 CREATE TABLE Student (
     student_id VARCHAR(10) PRIMARY KEY,
     student_name VARCHAR(100) NOT NULL,
@@ -45,10 +30,6 @@ CREATE TABLE Student (
     dept_id VARCHAR(10),
     FOREIGN KEY (dept_id) REFERENCES Department(dept_id)
 );
-
--- =====================
--- Enrollment Table
--- =====================
 CREATE TABLE Enrollment (
     student_id VARCHAR(10),
     course_id VARCHAR(10),
